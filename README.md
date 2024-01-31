@@ -102,8 +102,12 @@ Lastly, type **Leo** into the search bar, and install the official Leo plugin.
 
 
 ---
-## Testnet Credits
-NOTE: You can only request max of 15 credits per day.
+## Receiving Testnet Credits
+
+1) Fill in your Aleo wallet address at https://forms.gle/2MuBVACfhuQFuCZw7 (Fill in only once)
+
+2) Wait for us to send it to you.
+<!-- NOTE: You can only request max of 15 credits per day.
 
 1) Join the Aleo Discord: https://discord.gg/aleo
 2) Go to your Leo wallet and copy your Aleo Wallet Address
@@ -137,13 +141,13 @@ Example:
 <img alt="workshop" width="1412" src="./resources/Faucet_Success.png"/>
 
 
-7) You have now received Aleo public credits!
+7) You have now received Aleo public credits! -->
 
 ---
 ## Application Walkthrough
 
 This workshop walks through the following application:
-- [token](./token) - A transparent & shielded custom token in Leo
+- [token](./) - A transparent & shielded custom token in Leo
 
 
 ### 🪙 Token
