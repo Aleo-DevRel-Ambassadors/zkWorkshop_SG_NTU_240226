@@ -166,6 +166,24 @@ We will create an application that allows you to mint private and public tokens.
 
 ---
 
+## Usage
+
+Clone the repo
+```
+git clone https://github.com/Aleo-DevRel-Ambassadors/zkWorkshop_SG_SMU_240131.git
+```
+
+Enter the directory
+```
+cd zkWorkshop_SG_SMU_240131
+```
+
+Run some Leo CLI commands
+
+```
+leo run create_record
+```
+
 
 ## Local Development
 
