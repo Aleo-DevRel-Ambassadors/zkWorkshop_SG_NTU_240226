@@ -153,7 +153,14 @@ This workshop walks through the following application:
 ### 🪙 Token
 
 A transparent & shielded custom token in Leo.
-We will create an application that allows you to mint private and public tokens,
+We will create an application that allows you to mint private and public tokens.
+
+##### Learning objectives
+- Understand how to store information and modify state privately in records
+- Understand how to store information publicly using mapping.
+- Learn how to deploy a Leo program onto the Aleo testnet.
+- Learn how to make public to private and private to public calls.
+
 
 
 
@@ -185,7 +192,7 @@ snarkos developer deploy <PROGRAM_NAME> --private-key <PRIVATE_KEY> --query "htt
 Example:
 
 ```
-snarkos developer deploy my_token_1401.aleo --private-key APrivateKey1zkpBjpEgLo4arVUkQmcLdKQMiAKGaHAQVVwmF8HQby8vdYs --query "http://localhost:3033" --path "./build/" --broadcast "http://localhost:3033/testnet3/transaction/broadcast" --priority-fee 0
+snarkos developer deploy my_token_1402.aleo --private-key APrivateKey1zkpBjpEgLo4arVUkQmcLdKQMiAKGaHAQVVwmF8HQby8vdYs --query "http://localhost:3033" --path "./build/" --broadcast "http://localhost:3033/testnet3/transaction/broadcast" --priority-fee 0
 ```
 
 ### To execute a function of your program
@@ -198,7 +205,7 @@ snarkos developer execute <PROGRAM_NAME> <FUNCTION_NAME> <INPUT_ARGUMENTS> --pri
 Example:
 
 ```
-snarkos developer execute my_token_1401.aleo create_record --private-key APrivateKey1zkpBjpEgLo4arVUkQmcLdKQMiAKGaHAQVVwmF8HQby8vdYs --query "http://localhost:3033" --broadcast "http://localhost:3033/testnet3/transaction/broadcast" 
+snarkos developer execute my_token_1402.aleo create_record --private-key APrivateKey1zkpBjpEgLo4arVUkQmcLdKQMiAKGaHAQVVwmF8HQby8vdYs --query "http://localhost:3033" --broadcast "http://localhost:3033/testnet3/transaction/broadcast" 
 ```
 
 ### To scan for your records
@@ -236,12 +243,12 @@ snarkos developer deploy <PROGRAM_NAME> <FUNCTION_NAME> <INPUT_ARGUMENTS> --priv
 Example
 
 ```
-snarkos developer deploy my_token_1401.aleo --private-key "<PRIVATE_KEY>" --query "https://api.explorer.aleo.org/v1" --path "./build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
+snarkos developer deploy my_token_1402.aleo --private-key "<PRIVATE_KEY>" --query "https://api.explorer.aleo.org/v1" --path "./build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
 ```
 
 Execute Example
 ```
-snarkos developer execute my_token_1401.aleo mint_private "{
+snarkos developer execute my_token_1402.aleo mint_private "{
   owner: aleo1752ryjqhanf8m7dxn2dxralh8vuszp20ywqgttl68ue36kgsg5zs28j6yg.private,
   amount: 0u64.private,
   _nonce: 1968575589767858545246054726745663720563234710655185570269196653250325306476group.public
