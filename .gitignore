@@ -1,0 +1,6 @@
+.DS_Store
+deploy_local.sh
+deploy_testnet.sh
+build/
+.env
+snarkOS_default_settings.txt
