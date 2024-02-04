@@ -1,4 +1,4 @@
-program my_token_1402.aleo {
+program my_token_1403.aleo {
     // On-chain storage of an `account` map, with `address` as the key,
     // and `u64` as the value.
     mapping account: address => u64;

@@ -254,7 +254,7 @@ Broadcast: https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast
 Deploy Command
 
 ```
-snarkos developer deploy <PROGRAM_NAME> <FUNCTION_NAME> <INPUT_ARGUMENTS> --private-key <PRIVATE_KEY> --query "https://api.explorer.aleo.org/v1" --path "./build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
+snarkos developer deploy <PROGRAM_NAME> --private-key <PRIVATE_KEY> --query "https://api.explorer.aleo.org/v1" --path "./build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
 
 ```
 
