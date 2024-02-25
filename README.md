@@ -104,44 +104,11 @@ Lastly, type **Leo** into the search bar, and install the official Leo plugin.
 ---
 ## Receiving Testnet Credits
 
-1) Fill in your Aleo wallet address at https://forms.gle/2MuBVACfhuQFuCZw7 (Fill in only once)
+There are currently 2 possible ways to get testnet credits.
 
-2) Wait for us to send it to you.
-<!-- NOTE: You can only request max of 15 credits per day.
+1) Request from https://discord.com/channels/913160862670397510/1202322326230937640
 
-1) Join the Aleo Discord: https://discord.gg/aleo
-2) Go to your Leo wallet and copy your Aleo Wallet Address
-
-<img alt="Copy Aleo Wallet Address" width="1412" src="./resources/Copy_Wallet_Address.png"/>
-
-3) Go to https://faucetgreenlist.snarkos.net to greenlist your wallet address. NOTE: The greenlist only lasts for 5 mins, so you have to execute the next steps fast.
-
-<img alt="Greenlist" width="1412" src="./resources/Greenlist.png"/>
-
-4) Go to the faucet channel on Aleo Discord.
-
-<img alt="Aleo Faucet" width="1412" src="./resources/Aleo_Faucet_Channel.png"/>
-
-5) Type 
-
-```
-/sendcredits <ALEO_ADDRESS> 15
-```
-Example:
-
-```
-/sendcredits aleo1752ryjqhanf8m7dxn2dxralh8vuszp20ywqgttl68ue36kgsg5zs28j6yg 15
-```
-
-<img alt="send credits" width="1412" src="./resources/Send_Credits.png"/>
-
-
-6) A bot should message you to notify you of your request. Wait for a sucessful response.
-
-<img alt="workshop" width="1412" src="./resources/Faucet_Success.png"/>
-
-
-7) You have now received Aleo public credits! -->
+2) Request from https://dev.puzzle.online/faucet
 
 ---
 ## Application Walkthrough
@@ -247,8 +214,10 @@ snarkos developer scan -v AViewKey1iKKSsdnatHcm27goNC7SJxhqQrma1zkq91dfwBdxiADq 
 Similar steps as above, but using different API endpoints and specifying record
 
 Query: https://api.explorer.aleo.org/v1
-
 Broadcast: https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast
+
+For Haruka's Aleo Explorer
+Query: https://explorer.hamp.app
 
 
 Deploy Command
@@ -266,15 +235,9 @@ snarkos developer deploy my_token_1402.aleo --private-key "<PRIVATE_KEY>" --quer
 
 Execute Example
 ```
-snarkos developer execute my_token_1402.aleo mint_private "{
-  owner: aleo1752ryjqhanf8m7dxn2dxralh8vuszp20ywqgttl68ue36kgsg5zs28j6yg.private,
-  amount: 0u64.private,
-  _nonce: 1968575589767858545246054726745663720563234710655185570269196653250325306476group.public
-}" 7u64 --private-key <PRIVATE_KEY> --query "https://api.explorer.aleo.org/v1" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0 --record "{
-  owner: aleo1752ryjqhanf8m7dxn2dxralh8vuszp20ywqgttl68ue36kgsg5zs28j6yg.private,
-  microcredits: 2514698u64.private,
-  _nonce: 7397027231458557903930913012007952420218292833579405184292792278228120786092group.public
-}"
+snarkos developer execute my_token_1402.aleo mint_private snarkos developer execute my_token_2602.aleo mint_private "{  owner: aleo1752ryjqhanf8m7dxn2dxralh8vuszp20ywqgttl68ue36kgsg5zs28j6yg.private,  amount: 10u64.private,
+  _nonce: 33448326606935668906782998632395801444176995256723808316320437367514472280group.public 
+}" 21u64 --private-key APrivateKey_YOUR_PRIVATE_KEY --query "https://explorer.hamp.app" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
 ```
 
 ## Useful Links
