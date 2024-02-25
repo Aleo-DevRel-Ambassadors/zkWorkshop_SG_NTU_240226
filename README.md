@@ -142,7 +142,7 @@ git clone https://github.com/Aleo-DevRel-Ambassadors/zkWorkshop_SG_NTU_240226.gi
 
 Enter the directory
 ```
-cd zkWorkshop_SG_SMU_240131
+cd zkWorkshop_SG_NTU_240226
 ```
 
 Run some Leo CLI commands
