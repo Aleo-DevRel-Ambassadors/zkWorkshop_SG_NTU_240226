@@ -137,7 +137,7 @@ We will create an application that allows you to mint private and public tokens.
 
 Clone the repo
 ```
-git clone https://github.com/Aleo-DevRel-Ambassadors/zkWorkshop_SG_SMU_240131.git
+git clone https://github.com/Aleo-DevRel-Ambassadors/zkWorkshop_SG_NTU_240226.git
 ```
 
 Enter the directory
