@@ -235,7 +235,7 @@ snarkos developer deploy my_token_1402.aleo --private-key "<PRIVATE_KEY>" --quer
 
 Execute Example
 ```
-snarkos developer execute my_token_1402.aleo mint_private snarkos developer execute my_token_2602.aleo mint_private "{  owner: aleo1752ryjqhanf8m7dxn2dxralh8vuszp20ywqgttl68ue36kgsg5zs28j6yg.private,  amount: 10u64.private,
+snarkos developer execute my_token_2602.aleo mint_private "{  owner: aleo1752ryjqhanf8m7dxn2dxralh8vuszp20ywqgttl68ue36kgsg5zs28j6yg.private,  amount: 10u64.private,
   _nonce: 33448326606935668906782998632395801444176995256723808316320437367514472280group.public 
 }" 21u64 --private-key APrivateKey_YOUR_PRIVATE_KEY --query "https://explorer.hamp.app" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
 ```
